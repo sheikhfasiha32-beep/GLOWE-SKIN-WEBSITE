@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | GLOWÉ SKIN</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="checkout-page">
+
+    <!-- Premium Navigation -->
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            GLOWÉ <span>SKIN</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product-info.html">Our Serum</a>
+            <a href="order.html" class="active">Checkout</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Checkout Hero -->
+        <section class="checkout-hero">
+            <p class="eyebrow">A LITTLE LUXURY, JUST FOR YOU</p>
+
+            <h1>Your glow is<br><em>just one step away.</em></h1>
+
+            <p>
+                Thoughtful skincare. Beautiful rituals.
+                Let's get your favourite serum to your door.
+            </p>
+        </section>
+
+        <!-- Checkout Content -->
+        <section class="checkout-container">
+
+            <!-- Left: Product Showcase -->
+            <div class="checkout-product">
+
+                <div class="checkout-product-photo">
+                    <img
+                        src="assets/serum-product.jfif"
+                        alt="GLOWÉ SKIN Vitamin C Face Serum">
+                    <span class="photo-label">YOUR DAILY GLOW RITUAL</span>
+                </div>
+
+                <div class="checkout-product-details">
+
+                    <p class="eyebrow">GLOWÉ SKIN SIGNATURE</p>
+
+                    <h2>Vitamin C<br>Face Serum</h2>
+
+                    <p class="checkout-description">
+                        A simple addition to your daily skincare ritual
+                        for a fresh, radiant-looking complexion.
+                    </p>
+
+                    <div class="checkout-product-price">
+                        <span>Price per bottle</span>
+                        <strong>Rs. 2,499</strong>
+                    </div>
+
+                    <div class="checkout-benefits">
+                        <p>✦ Thoughtfully designed skincare ritual</p>
+                        <p>✦ Easy addition to your daily routine</p>
+                        <p>✦ Delivered to your doorstep</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right: Checkout Form -->
+            <div class="checkout-details">
+
+                <div class="checkout-title-row">
+                    <div>
+                        <p class="eyebrow">YOUR ORDER</p>
+                        <h2>Checkout</h2>
+                    </div>
+
+                    <span class="checkout-step">01 / 01</span>
+                </div>
+
+                <form id="orderForm">
+
+                    <!-- Customer Information -->
+                    <div class="checkout-section">
+                        <h3>Contact information</h3>
+                        <p class="section-description">
+                            Where can we reach you?
+                        </p>
+
+                        <div class="checkout-field">
+                            <label for="customerName">Full name</label>
+                            <input
+                                type="text"
+                                id="customerName"
+                                name="customerName"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="checkout-field">
+                            <label for="customerEmail">Email address</label>
+                            <input
+                                type="email"
+                                id="customerEmail"
+                                name="customerEmail"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="checkout-field">
+                            <label for="customerPhone">Phone number</label>
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                name="customerPhone"
+                                placeholder="03XX XXXXXXX"
+                                autocomplete="tel"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Information -->
+                    <div class="checkout-section">
+                        <h3>Delivery details</h3>
+                        <p class="section-description">
+                            Tell us where your glow should arrive.
+                        </p>
+
+                        <div class="checkout-field">
+                            <label for="customerAddress">Full delivery address</label>
+                            <textarea
+                                id="customerAddress"
+                                name="customerAddress"
+                                rows="3"
+                                placeholder="House, street, area and city"
+                                autocomplete="street-address"
+                                required></textarea>
+                        </div>
+
+                        <div class="checkout-field">
+                            <label for="city">City</label>
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter your city"
+                                autocomplete="address-level2"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- Product Quantity -->
+                    <div class="checkout-section">
+                        <h3>Your selection</h3>
+
+                        <div class="checkout-quantity-row">
+                            <div>
+                                <strong>Vitamin C Face Serum</strong>
+                                <p>Rs. 2,499 per bottle</p>
+                            </div>
+
+                            <select
+                                id="quantity"
+                                name="quantity"
+                                aria-label="Select quantity">
+
+                                <option value="1">Qty: 1</option>
+                                <option value="2">Qty: 2</option>
+                                <option value="3">Qty: 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Payment Methods -->
+<div class="payment-methods">
+
+    <label class="payment-option">
+        <input type="radio" name="payment" value="cod" checked>
+        <span class="payment-copy">
+            <strong>Cash on Delivery</strong>
+            <small>Pay when your order arrives</small>
+        </span>
+        <span class="payment-symbol">COD</span>
+    </label>
+
+    <label class="payment-option">
+        <input type="radio" name="payment" value="easypaisa">
+        <span class="payment-copy">
+            <strong>Easypaisa</strong>
+            <small>Mobile wallet payment</small>
+        </span>
+        <span class="payment-symbol">EP</span>
+    </label>
+
+    <label class="payment-option">
+        <input type="radio" name="payment" value="jazzcash">
+        <span class="payment-copy">
+            <strong>JazzCash</strong>
+            <small>Mobile wallet payment</small>
+        </span>
+        <span class="payment-symbol">JC</span>
+    </label>
+
+    <label class="payment-option">
+        <input type="radio" name="payment" value="bank">
+        <span class="payment-copy">
+            <strong>Bank Transfer</strong>
+            <small>Pay through your bank</small>
+        </span>
+        <span class="payment-symbol">BANK</span>
+    </label>
+
+</div>
+
+                    <!-- Price Summary -->
+                    <div class="checkout-summary">
+                        <div>
+                            <span>Subtotal</span>
+                            <span id="subtotalAmount">Rs. 2,499</span>
+                        </div>
+
+                        <div>
+                            <span>Delivery</span>
+                            <span>Calculated separately</span>
+                        </div>
+
+                        <div class="checkout-grand-total">
+                            <strong>Total</strong>
+                            <strong id="totalAmount">Rs. 2,499</strong>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="btn-primary checkout-submit">
+
+                        Place My Order <span>→</span>
+                    </button>
+
+                    <p class="checkout-disclaimer">
+                        This is a student website demonstration.
+                        No real order, payment or customer information
+                        will be sent to a server.
+                    </p>
+
+                    <p id="orderMessage" role="status"></p>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Brand Promise -->
+        <section class="checkout-footer-note">
+            <span>GLOWÉ SKIN</span>
+            <p>Skincare that feels like a little moment of self-love.</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>GLOWÉ SKIN — A little care, a little glow.</p>
+        <p>&copy; 2026 GLOWÉ SKIN. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
